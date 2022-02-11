@@ -23,7 +23,11 @@ const Tabs = (topics) => {
     tab.textContent = topic;
     tab.classList.add('tab');
     topicsDiv.appendChild(tab);
+    tab.addEventListener('click', () => {
+      console.log(tab);
+    })
   })
+  
   return topicsDiv;
 }
 
